@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='prediction.css') }}">
+</head>
+<body>
+ <div class="outer">
+
+    <div class="inner">
+       <header class="signup-header">
+        <h1 class="logo" >FAKE NEWS DETECTION</h1>
+
+       </header>
+       <main class="signup-body">
+        <br><p class="text-primary"><b>{{prediction_text}}</b></p>
+        <form action="/prediction" method="POST">
+            <p>
+                <label for="news">Enter your news here</label>
+                <input type="text" id="news" name="news" placeholder="Your News" required>
+            </p>
+            <p>
+                
+              <input type="submit" id="submit" value="Check Now">
+
+          </p>
+         
+        </form>
+       </main>
+       <!-- <footer class="signup-footer">
+        <p>Already have an account? <a href="#">Login</a></p>
+       </footer> -->
+    </div>
+
+
+ </div>
+
+    
+</body>
+</html>
